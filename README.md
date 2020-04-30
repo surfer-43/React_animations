@@ -1,3 +1,11 @@
+This is about React animationtechniques
+The library covered is Transition Group
+
+other libraries:
+https://github.com/chenglou/react-motion#readme
+https://github.com/react-tools/react-move
+http://maisano.github.io/react-router-transition/ - router specific
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
