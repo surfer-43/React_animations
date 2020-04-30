@@ -37,6 +37,12 @@ class App extends Component {
           timeout={1000}
           mountOnEnter
           unmountOnExit
+          onEnter={() => {console.log("onEnter callback was fired")}}
+          onEntering={() => {console.log("onEntering callback was fired")}}
+          onEntered={() => {console.log("onEntered callback was fired")}}
+          onExit={() => {console.log("onExit callback was fired")}}
+          onExiting={() => {console.log("onExiting callback was fired")}}
+          onExited={() => {console.log("onExited callback was fired")}}
           >
           {state => (
             <div

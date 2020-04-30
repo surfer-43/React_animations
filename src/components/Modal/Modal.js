@@ -3,6 +3,15 @@ import Transition from 'react-transition-group/Transition'
 
 import './Modal.css';
 
+/**
+ * to make sure the entir animation plays
+ * the duration in miliseconds must be the same
+ */
+const animationTiming = {
+    enter: 400,
+    exit: 1000
+}
+
 const modal = (props) => {
     console.log("(modal) what is the props: ", props);
     const cssClasses = ['Modal'];
@@ -14,7 +23,7 @@ const modal = (props) => {
             mountOnEnter
             unmountOnExit
             in={props.show}
-            timeout={300}
+            timeout={animationTiming}
         >
             { state => {
                 const cssClasses = ['Modal'
